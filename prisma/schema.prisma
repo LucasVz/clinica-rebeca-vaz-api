@@ -17,7 +17,8 @@ model User {
 
 model Service {
   id    Int    @id @default(autoincrement())
-  name  String @unique
+  title String @unique
+  text  String
   image String
 
   @@map("services")
